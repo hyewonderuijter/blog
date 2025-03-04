@@ -83,7 +83,7 @@
 	/* Specifically target the active page link */
 	.active {
         color: #000;
-        font-weight: bold;
+        font-weight: 400;
     }
 	
 	/* Hover and focus states for other links */

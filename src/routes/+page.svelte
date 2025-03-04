@@ -22,9 +22,9 @@
                     <p class="second-para">The web is a constantly evolving platform, and that deeply resonates with me. This blog is a space where I share insights, lessons learned, and how I achieve my goals in my development journey.</p>
                 </div>
                 <div class="icon-list">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" class="icon"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/domain.png" alt="domain" class="icon"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin" class="icon"/>
+                    <a href="https://github.com/hyewonderuijter"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" class="icon"/></a>
+                    <a href="http://improvisus.net"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/domain.png" alt="domain" class="icon"/></a>
+                    <a href="https://www.linkedin.com/in/hyewonim/"><img width="30" height="30" class="icon" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
                 </div>
             </div>
     </div>
