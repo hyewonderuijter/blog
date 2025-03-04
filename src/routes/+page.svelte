@@ -17,7 +17,7 @@
             </div>
             <div data-aos="fade-left" data-aos-duration="1300">
                 <div class="textarea">
-                    <h1>Hello, I'm Hyewon!</h1>
+                    <h1 class="title">Hello, I'm Hyewon!</h1>
                     <p class="first-para">I'm a <strong>creative developer</strong> based in the Netherlands 🇳🇱<br/> I create, showcase remarkable design discoveries, and explore the continuous innovation that drives web development forward. </p>
                     <p class="second-para">The web is a constantly evolving platform, and that deeply resonates with me. This blog is a space where I share insights, lessons learned, and how I achieve my goals in my development journey.</p>
                 </div>
@@ -55,9 +55,9 @@
         width: 450px;
     }
 
-    h1 {
+    .title {
         font-size: 3rem;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     p {

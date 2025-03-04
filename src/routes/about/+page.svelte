@@ -29,8 +29,8 @@
                     <div class="textarea">
                         <h2>Finding My Path in Development</h2>
                         <p class="first-para">Moving to the Netherlands for my relationship gave me the opportunity to pursue my dream in the development field.</p>
-                        <p class="second-para">I've explored new technologies, from HTML/CSS/JavaScript to 3D web development using tools like Three.js and React Three Fiber.</p>
                         <p>My passion for creating innovative and visually compelling digital experiences continues to drive my growth as a creative developer.</p>
+                        <p class="second-para">I've explored new technologies, from <strong>HTML/CSS/JavaScript</strong> to 3D web development using tools like <strong>Three.js and React Three Fiber</strong>.</p>
                     </div>
                 </div>
             </div>
