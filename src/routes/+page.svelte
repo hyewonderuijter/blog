@@ -22,9 +22,11 @@
                     <p class="second-para">The web is a constantly evolving platform, and that deeply resonates with me. This blog is a space where I share insights, lessons learned, and how I achieve my goals in my development journey.</p>
                 </div>
                 <div class="icon-list">
-                    <a href="https://github.com/hyewonderuijter"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" class="icon"/></a>
-                    <a href="http://improvisus.net"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/domain.png" alt="domain" class="icon"/></a>
-                    <a href="https://www.linkedin.com/in/hyewonim/"><img width="30" height="30" class="icon" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>
+                    <img width="48" height="48" src="svelte.png" alt="svetle"/>
                 </div>
             </div>
     </div>
@@ -68,11 +70,6 @@
         display: flex;
         flex-direction: row;
         gap: 20px;
-    }
-
-    .icon:focus, .icon:hover {
-        transform: scale(1.2);
-        transition: transform 0.5s ease;
     }
 
 </style>
