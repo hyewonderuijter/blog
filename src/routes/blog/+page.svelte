@@ -1,65 +1,52 @@
 <!-- src/routes/blog/+page.svelte -->
 <script>
-    import { onMount } from "svelte";
+  import { blogPosts } from '$lib/stores/blogStore';
+  import { onMount } from "svelte";
 
-    // @ts-ignore
-    import AOS from 'aos';
+  // @ts-ignore
+  import AOS from 'aos';
 
-    onMount(() => {
-        AOS.init();
-    });
+  let posts = []; // blogPosts 데이터를 저장할 변수
 
-    // Blog Post Data
-    const blogPosts = [
-      {
-        id: 1,
-        title: 'What is Svelte?',
-        excerpt: 'Svelte와 SvelteKit을 사용하여 블로그를 구축하는 방법을 알아봅니다.',
-        date: '2025-03-05',
-        author: 'Hyewon Im',
-        tags: ['Svelte', 'Web Development'],
-        featuredImage: 'svelte-blog.png'
-      },
-      {
-        id: 2,
-        title: 'My First Svelte Project',
-        excerpt: 'JavaScript의 고급 개념과 실용적인 팁을 소개합니다.',
-        date: '2024-03-06', 
-        tags: ['Web Design', 'Web Development', 'Svelte'],
-        featuredImage: 'wedding-blog.png'
-      }
-      // 더 많은 포스트 추가 가능
-    ];
-  </script>
-  
-  <div class="blog-page">
-    <h1 class="main-title poppins-bold">Blog</h1><div data-aos="fade-up" data-aos-duration="1500">
-        <div class="blog-container ">
-        {#each blogPosts as post}
-            <div class="blog-card">
-            <a href={`/blog/${post.id}`}>
-                <div class="card-image">
-                <img src={post.featuredImage} alt={post.title} />
-                </div>
-                <div class="card-content">
-                <h2 class="card-title">{post.title}</h2>
-                <p class="card-excerpt">{post.excerpt}</p>
-                <div class="tags">
-                    {#each post.tags as tag}
-                    <span class="tag">#{tag}</span>
-                    {/each}
-                </div>              
-                <div class="card-footer">
-                    <span class="date">{post.date}</span>
-                    <span class="author">{post.author}</span>
-                </div>
-                </div>
-            </a>
+  // 스토어 구독
+  blogPosts.subscribe(value => {
+    posts = value; // 스토어 데이터를 posts에 저장
+  });
+
+  onMount(() => {
+    AOS.init();
+  });
+</script>
+
+<div class="blog-page">
+  <h1 class="main-title poppins-bold">Blog</h1>
+  <div data-aos="fade-up" data-aos-duration="1500">
+    <div class="blog-container">
+      {#each posts as post}
+        <div class="blog-card">
+          <a href={`/blog/${post.id}`}>
+            <div class="card-image">
+              <img src={post.featuredImage} alt={post.title} />
             </div>
-        {/each}
+            <div class="card-content">
+              <h2 class="card-title">{post.title}</h2>
+              <p class="card-excerpt">{post.excerpt}</p>
+              <div class="tags">
+                {#each post.tags as tag}
+                  <span class="tag">#{tag}</span>
+                {/each}
+              </div>              
+              <div class="card-footer">
+                <span class="date">{post.date}</span>
+                <span class="author">{post.author}</span>
+              </div>
+            </div>
+          </a>
         </div>
+      {/each}
     </div>
   </div>
+</div>
   
   <style>
     .blog-page {
