@@ -1,12 +1,24 @@
 <!-- src/routes/blog/+page.svelte -->
-<script>
+<script lang="ts">
   import { blogPosts } from '$lib/stores/blogStore';
   import { onMount } from "svelte";
 
   // @ts-ignore
   import AOS from 'aos';
 
-  let posts = []; // blogPosts 데이터를 저장할 변수
+  // BlogPost 인터페이스 정의
+  interface BlogPost {
+  id: number; // string에서 number로 변경
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  tags: string[];
+  featuredImage: string;
+  content: string;
+}
+
+  let posts: BlogPost[] = []; // posts 변수에 명시적으로 타입 지정
 
   // 스토어 구독
   blogPosts.subscribe(value => {
@@ -55,7 +67,7 @@
     }
   
     .main-title {
-        margin-top: 6rem; /* Same height as other pages */
+      margin-top: 6rem; /* Same height as other pages */
       text-align: center;
       margin-bottom: 2rem;
       font-size: 3rem;

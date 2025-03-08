@@ -18,7 +18,7 @@
         </div>
         <div data-aos="fade-left" data-aos-duration="1300">
             <div class="textarea">
-                <p class="first-para">Whether you have an exciting project in mind or simply want to connect, just click on the icons below to get in touch with me — I’d love to hear from you!</p>
+                <p class="first-para">Whether you have an exciting project in mind or simply want to connect, just click on the icons below to get in touch with me!</p>
                 <div class="icon-list">
                     <a href="mailto:hyewon.im@icloud.com">
                         <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" class="icon" alt="new-post"/>
@@ -27,7 +27,7 @@
                     <a href="http://improvisus.net"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/domain.png" alt="domain" class="icon"/></a>
                     <a href="https://www.linkedin.com/in/hyewonim/"><img width="30" height="30" class="icon" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
                 </div>
-                <p class="second-para">I run a one-person web design agency, where creativity meets precision. Curious to know more? Check out <a href="https://improvisus.net">my website</a>. If you’d like to learn more about my experience, feel free to view my resume by clicking <a href="https://www.icloud.com/iclouddrive/0d9UAqtUGT2rYJjKz2rzygfIA#CV">here</a>.</p>
+                <p class="second-para">I also run a one-person web design agency, where creativity meets precision. Curious to know more? Check out <a href="https://improvisus.net">my website</a>.<br/> If you’d like to learn more about my experience, feel free to view my resume by clicking <a href="https://www.icloud.com/iclouddrive/0d9UAqtUGT2rYJjKz2rzygfIA#CV">here</a>.</p>
 
             </div>
         </div>
