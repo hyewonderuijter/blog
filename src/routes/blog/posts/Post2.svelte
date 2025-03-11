@@ -1,5 +1,4 @@
 <!-- src/routes/blog/[id]/posts/Post2.svelte -->
-
 <article>
   <h1>두 번째 포스트</h1>
   <img src="/images/post1.jpg" alt="Post " />
