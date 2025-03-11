@@ -1,5 +1,5 @@
 <main>
-    <p>© Copyright 2025 Hyewon Im. ALL RIGHTS RESERVED.</p>
+    <p>© Copyright 2025 Hyewon Im. All Rights Reserved.</p>
 </main>
 
 <style>

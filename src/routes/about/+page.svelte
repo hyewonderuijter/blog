@@ -65,6 +65,7 @@
 
     .second-story {
         margin-left: auto;
+        padding-left: 1.5rem;
         flex-direction: row-reverse;
     }
 
