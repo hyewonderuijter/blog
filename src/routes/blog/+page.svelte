@@ -18,11 +18,10 @@
   content: string;
 }
 
-  let posts: BlogPost[] = []; // posts 변수에 명시적으로 타입 지정
+  let posts: BlogPost[] = [];
 
-  // 스토어 구독
   blogPosts.subscribe(value => {
-    posts = value; // 스토어 데이터를 posts에 저장
+    posts = value;
   });
 
   onMount(() => {
@@ -69,7 +68,7 @@
     .main-title {
       margin-top: 6rem; /* Same height as other pages */
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       font-size: 3rem;
     }
   

@@ -1,7 +1,7 @@
 <!-- src/routes/blog/[id]/posts/Post1.svelte -->
 <main>
   <div class="left-container index-table">
-    <p class="index-title poppins-semibold">Index</p>
+    <p class="index-title poppins-semibold">Table of Contents</p>
     <nav>
       <ul class="index-list poppins-light">
         <li><a href="#diving-into-my-first-framework-why-svelte">Diving into My First Framework: Why Svelte?</a></li>
@@ -21,8 +21,8 @@
         <div class="img-container main-img">
           <img src="/svelte-blog.png" alt="Main of Post1" />
         </div>
-        <div class="text-container">
 
+        <div class="text-container">
           <h2 id="diving-into-my-first-framework-why-svelte" class="poppins-semibold">Diving into My First Framework: Why Svelte?</h2>
           <p>A few months ago, I had just finished learning HTML, CSS, and JavaScript. As I started thinking about how to build real projects, I realized that writing everything from scratch would be inefficient. That’s when I discovered frameworks.</p>
           <p>A framework provides a structured way to develop applications. Instead of manually coding everything, developers can follow a predefined architecture, which makes the process faster and more efficient.</p>
@@ -33,7 +33,7 @@
         <p>Svelte is a framework for building user interfaces in the web environment. Unlike other frameworks, Svelte efficiently compiles code written in HTML, CSS, and JavaScript into optimized JavaScript at build time. Unlike React and Vue.js, which use a virtual DOM during runtime, Svelte transforms the code at build time, eliminating the need for a virtual DOM.</p>
         <p>In addition to its intuitive syntax, Svelte’s reactivity feature is one of its key strengths. Other frameworks, such as React and Vue.js, require specific functions or APIs for state management. However, in Svelte, the UI updates automatically whenever a variable declared with let is modified. This makes Svelte a straightforward and efficient framework compared to others. It also allows data inside arrays and objects to be reactive, but more complex data structures, such as Set and Map, do not update reactively by default.</p>
         <p>The structure of a Svelte component is as follows: it consists of three main parts—<code>&lt;script&gt;</code>, markup (HTML-like structure), and <code>&lt;style&gt;</code>. The <code>&lt;script&gt;</code> block handles logic and state, the markup defines the UI, and the <code>&lt;style&gt;</code> block contains scoped styles. This simple and modular structure makes Svelte easy to work with.</p>
-        <pre>
+        <pre><code class="language-html">
           &lt;script&gt;
             let count = 0;
           
@@ -55,7 +55,7 @@
               cursor: pointer;
             &#125;
           &lt;/style&gt;
-          </pre>
+          </code></pre>
           
         <h2 id="svelte-vs-sveltekit" class="poppins-semibold">Svelte vs SvelteKit</h2>
         <p>Svelte is a framework designed specifically for building user interfaces. It focuses on writing components, making development fast and efficient. However, it does not provide built-in features for structuring an entire web application.</p>
@@ -64,7 +64,7 @@
         <h2 id="core-concepts-of-sveltekit" class="poppins-semibold">Core Concepts of SvelteKit</h2>
           <p>A SvelteKit project consists of the following directories and files:</p>
           <div class="md-file">
-            <pre>my-project/
+            <pre><code class="language-svelte">my-project/
               ├── src/
               │   ├── lib/
               │   │   ├── server/      # Server-only library files
@@ -86,7 +86,7 @@
               ├── svelte.config.js     # SvelteKit configuration
               ├── tsconfig.json        # TypeScript configuration
               └── vite.config.js       # Vite configuration
-            </pre>
+            </code></pre>
           </div>
           <p>SvelteKit is fundamentally based on Vite and provides a structure for building complete web applications, including UI components (`src/lib/`), pages (`src/routes/`), static assets (`static/`), and server-side code (`lib/server/`).</p>
           
@@ -141,12 +141,18 @@
   }
 
   .border-left {
-    border-left: 1px solid #bababa;
+    border-left: 1px solid #fff;
   }
   
   .img-container, .text-container {
     width: 80%;     /* Total width of contents */
     margin: 0 auto;
+  }
+
+  pre {
+    max-width: 80vw;
+    border-radius: 10px;
+    overflow: auto;
   }
 
   /* Ensure consistent top margin across pages */
@@ -174,6 +180,11 @@
     font-size: 1.2rem;
     line-height: 1.5;
     color: #888888;
+  }
+
+  li:focus, li:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.5s ease;
   }
 
   /* Main Title Styling */

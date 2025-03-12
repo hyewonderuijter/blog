@@ -11,17 +11,18 @@ const initialPosts = [
     date: '2025-03-05',
     author: 'Hyewon Im',
     tags: ['Svelte', 'Web Development'],
-    featuredImage: '/svelte-blog.png'
+    featuredImage: '/svelte-blog.png',
+    content: 'This is the content of the first post.'
   },
   {
     id: 2,
-    title: 'My First Svelte Project',
-    excerpt: 'JavaScript의 고급 개념과 실용적인 팁을 소개합니다.',
+    title: 'Building My First Svelte Project: A Wedding Invitation Website',
+    excerpt: 'Here’s how I designed and developed it, from choosing Svelte to adding interactive elements.',
     date: '2024-03-06', 
     author: 'Hyewon Im',
-    tags: ['Web Design', 'Web Development', 'Svelte'],
+    tags: ['UXUI', 'Web Development'],
     featuredImage: '/wedding-blog.png',
-    content: '<p>이 프로젝트는 Svelte를 처음 사용해 본 경험을 기록한 것입니다...</p>'
+    content: 'This is the content of the second post.'
   }
 ];
 

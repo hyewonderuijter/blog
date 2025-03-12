@@ -48,6 +48,7 @@
 
     .title {
         text-align: center;
+        margin-bottom: 5rem;
     }
 
     .story-container {
