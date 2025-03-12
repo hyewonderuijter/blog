@@ -1,4 +1,15 @@
 <!-- src/routes/blog/[id]/posts/Post1.svelte -->
+<script lang="ts">
+  import { onMount } from "svelte";
+  import Prism from "prismjs";
+
+  onMount(() => {
+      setTimeout(() => {
+          Prism.highlightAll();
+      }, 100);
+  });
+</script>
+
 <main>
   <div class="left-container index-table">
     <p class="index-title poppins-semibold">Table of Contents</p>

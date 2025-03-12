@@ -1,4 +1,17 @@
 <!-- src/routes/blog/[id]/posts/Post2.svelte -->
+<script lang="ts">
+  import { onMount } from "svelte";
+  import Prism from "prismjs";
+
+  onMount(() => {
+      setTimeout(() => {
+          Prism.highlightAll();
+      }, 100);
+  });
+</script>
+
+
+
 <main>
   <div class="left-container index-table">
     <p class="index-title poppins-semibold">Table of Contents</p>
@@ -30,7 +43,7 @@
         <p>Additionally, digital invitations are convenient for guests, as it is common to give money as a wedding gift to celebrate the couple. This makes it easier to include important details such as the bank account number and the account holder’s name.</p>
         <p>With these things in mind, I felt confident that this was a project I could handle as a beginner since it only required simple features. However, I was shocked to find that these companies charge a significant amount of money despite the simplicity of their designs and website features.</p>
 
-        <h2 id="creating-the-paper-invitation" class="poppins-semibold">Step 1. Creating the Paper Invitation</h2>
+        <h2 id="creating-the-paper-invitation" class="heading poppins-semibold">Step 1. Creating the Paper Invitation</h2>
         <div class="img-container text-img">
           <img src="/paper-card.png" alt="Descriptive pic of the card invitation">
           <p class="caption">© Hyewon Im</p>
@@ -60,9 +73,8 @@
           <h3>Key Features I Built</h3>
           <h4>1. Photo gallery</h4>
           <p>I implemented an interactive gallery feature, allowing users to click on thumbnails to view larger images. This was achieved by dynamically updating the main image's source when a thumbnail is clicked.</p>
-          <pre><code class="language-javascript language-html">
+          <pre><code class="language-html">
     &lt;script lang="ts"&gt;
-    
         let currentImageIndex = 0;
 
         function changeImage(index: number) &lt;
@@ -86,6 +98,36 @@
             &lt;/div&gt;
     &lt;/main&gt;
           </code></pre>
+          <h4>2. Calendar & countdown</h4>
+          <p>I implemented a dynamic calendar and countdown feature to highlight the wedding date and show the remaining days. The countdown updates dynamically, allowing users to see how many days are left until the wedding.</p>
+          <pre><code class="language-html">
+    &lt;script lang="ts"&gt;
+        const year = 2025;
+        const month = 2; // 0 = Jan, (...), 2 = March
+        
+        const daysInMonth = new Date(year, month + 1, 0).getDate(); // Total dates in a specific month
+        const firstDayIndex = new Date(year, month, 1).getDay(); // First day in a specific month (Sunday = 0)
+        
+        let dates = [];
+        
+        for (let i = 0; i &lt; firstDayIndex; i++) &lt;
+                    dates.push('');
+                    &gt;
+        for (let i = 1; i &lt;= daysInMonth; i++) &lt;
+                    dates.push(i);
+                    &gt;
+    &lt;/script&gt;
+    &lt;main&gt;
+        &lt;div class="calendar"&gt;
+                  /.../
+            &lt;div class="calendar-dates"&gt;
+                &lt;#each dates as date&gt;
+                   &lt;div class="date &lt;date === 22 ? 'highlight' : ''&gt;"&gt;&lt;date&gt;&lt;/div&gt;
+                &lt;/each&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/main&gt;
+        </code></pre>
         
             
           
@@ -134,6 +176,7 @@
     max-width: 80vw;
     overflow: auto;
     border-radius: 10px;
+    margin-bottom: 4rem;
   }
 
   /* Ensure consistent top margin across pages */
