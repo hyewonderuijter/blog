@@ -188,12 +188,12 @@
 
   .index-list > li {
     margin: 1rem 2rem 1rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: #888888;
   }
 
-  li:focus, li:hover {
+  .index-list>li:focus, .index-list>li:hover {
     text-decoration: underline;
     transition: text-decoration 0.5s ease;
   }
