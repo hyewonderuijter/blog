@@ -110,9 +110,7 @@
             <li><strong>WEBP</strong> offers better compression with both lossless and lossy options for optimal performance.</li>
           </ul>
           <p>Given that most of the images I used were high-quality and large in size, I decided to convert them to <strong>WEBP format</strong> for better performance and efficiency. Instead of storing the images locally, I uploaded them to <strong>Cloudflare R2 storage</strong> and used their URLs for direct access.</p>
-          <div class="img-container text-img">
             <img src="https://hyewonim.com/static/r2.png" alt="descriptive about r2 stroage usage">
-          </div>
           <p>To retrieve the URLs of the image files, the first step is to connect a custom domain to Cloudflare R2. This allows seamless access to stored assets via a friendly and consistent URL structure. Once the domain is linked, images can be referenced directly using public URLs.</p>
           <h4>2. Calendar & countdown</h4>
           <p>I implemented a dynamic calendar and countdown feature to highlight the wedding date and show the remaining days. The countdown updates dynamically, allowing users to see how many days are left until the wedding.</p>
