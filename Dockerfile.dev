@@ -7,9 +7,6 @@ ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 ENV PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-# Add Cloudflare API Token environment variable
-ENV CLOUDFLARE_API_TOKEN=R5lwSGZ2LMaf_sYYQc7sTE3Ixtll7W--QBRqik-7
-
 # Update Apt packages
 RUN apt-get update && \
     apt-get upgrade -y && \
