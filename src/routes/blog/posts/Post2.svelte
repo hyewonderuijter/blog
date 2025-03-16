@@ -97,7 +97,7 @@
     &lt;/main&gt;
           </code></pre>
           <p>During development, I encountered an <span class="issue-in-red">issue</span> with image quality and file size. The original PNG images were too large, causing slow loading times, especially on mobile devices. Additionally, reducing the file size manually often led to a noticeable loss in image quality, making it difficult to balance performance and visual clarity. To address this, I researched different image optimization techniques to find a solution that maintains quality while improving performance.</p>
-          <p><strong>Image resolution</strong>refers to the number of pixels in an image—higher resolution means more detail, while lower resolution means results in smaller file sizes but less clarity.</p>
+          <p><strong>Image resolution</strong> refers to the number of pixels in an image—higher resolution means more detail, while lower resolution means results in smaller file sizes but less clarity.</p>
           <p>Image compression works in two different ways:</p>
           <ul>
             <li><strong>Lossless compression</strong> retains all original data but takes longer to decompress on the client side.</li>
@@ -109,16 +109,11 @@
             <li><strong>JPEG</strong> uses lossy compression to balance quality and sizes. </li>
             <li><strong>WEBP</strong> offers better compression with both lossless and lossy options for optimal performance.</li>
           </ul>
-          <p>Given that most of the images I used were high-quality and large in size, I decided to convert them to <strong>WEBP format</strong> for better performance and efficiency.</p>
-          <pre><code class="language-html">
-  /* convert.sh */
-  mkdir -p webp
-      for file in *.png; do
-        base=$(basename "$file" .png)
-        convert "$file" -quality 50 "webp/$base-button.webp"
-      done
-          </code></pre>
-          <p>I used a <strong>shell script (convert.sh)</strong> to automatically convert all PNG files into WebP format. This format compresses images to 50% quality and saves them as WebP thumnails (-button.webp). This significantly reduces file sizes, improving website performance while maintaining good image quality.</p>
+          <p>Given that most of the images I used were high-quality and large in size, I decided to convert them to <strong>WEBP format</strong> for better performance and efficiency. Instead of storing the images locally, I uploaded them to <strong>Cloudflare R2 storage</strong> and used their URLs for direct access.</p>
+          <div class="img-container text-img">
+            <img src="https://hyewonim.com/static/r2.png" alt="descriptive about r2 stroage usage">
+          </div>
+          <p>To retrieve the URLs of the image files, the first step is to connect a custom domain to Cloudflare R2. This allows seamless access to stored assets via a friendly and consistent URL structure. Once the domain is linked, images can be referenced directly using public URLs.</p>
           <h4>2. Calendar & countdown</h4>
           <p>I implemented a dynamic calendar and countdown feature to highlight the wedding date and show the remaining days. The countdown updates dynamically, allowing users to see how many days are left until the wedding.</p>
           <pre><code class="language-html">
@@ -172,39 +167,6 @@
         <p>I encountered an <span class="issue-in-red">issue</span> where animations wouldn't work correctly unless the library was initialized properly. To resolve this, I ensured that <code>AOS.init()</code> was executed inside <code>onMount</code>, preventing errors and ensuring the animations loaded correctly after the component was rendered.</p>
 
         <h2 id="hosting-deployment" class="poppins-semibold">Step 4. Hosting & Deployment</h2>
-        <p>Initially, I planned to host the website on GitHub Pages (github.io) since it provides free hosting. However, I quickly encountered <span class="issue-in-red">issues</span> because GitHub Pages only support <italic>static websites</italic>.</p>
-        <table>
-          <thead>
-              <tr>
-                  <th>Category</th>
-                  <th>Static Website</th>
-                  <th>Dynamic Website</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td><strong>Functionality</strong></td>
-                  <td>Serves pre-built HTML, CSS, and JavaScript files as they are.</td>
-                  <td>Generates content dynamically based on user requests and data.</td>
-              </tr>
-              <tr>
-                  <td><strong>Server Requirement</strong></td>
-                  <td>No server required, only hosting is needed.</td>
-                  <td>Requires a backend server to process requests.</td>
-              </tr>
-              <tr>
-                  <td><strong>Database</strong></td>
-                  <td>Not used</td>
-                  <td>Can be used</td>
-              </tr>
-              <tr>
-                  <td><strong>Page Loading</strong></td>
-                  <td>Loads the same pre-rendered content every time.</td>
-                  <td>Changes content dynamically based on data or user actions.</td>
-              </tr>
-          </tbody>
-      </table>
-          <p>However, my project was built with SvelteKit, which is designed for dynamic web applications, including SSR and API integration. Because of this, it couldn't work properly on GitHub Pages.</p>
           <p>I implemented a Docker-based deployment setup with DevContainer for local development and Cloudflare for hosting.</p>
           <ul>
             <li><strong>Docker</strong> is used for universal, containerized code that runs the same everywhere, regardless of the environment.</li>
