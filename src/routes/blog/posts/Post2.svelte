@@ -283,22 +283,6 @@
     margin-bottom: 6rem;
   }
 
-  /* Table Styling */
-    table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-  }
-
-  th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-  }
-
-  th {
-      font-weight: bold;
-  }
-
   /* Textarea - Font Size */
   h2 {
     font-size: 2rem;
