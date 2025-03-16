@@ -28,7 +28,7 @@
       <div class="border-left">
         <h1 class="main-title poppins-bold">Building My First Svelte Project: <br/>A Wedding Invitation Website</h1>
         <div class="img-container main-img">
-          <img src="/wedding-blog.png" alt="Main of Post1" />
+          <img src="https://hyewonim.com/static/wedding-blog.png" alt="Main of Post1" />
           <p class="caption">See the prototype <a href="https://yejeongandhakrim.pages.dev" class="prototype-link">here</a></p>
       </div>
       
@@ -41,14 +41,14 @@
 
         <h2 id="creating-the-paper-invitation" class="heading poppins-semibold">Step 1. Creating the Paper Invitation</h2>
         <div class="img-container text-img">
-          <img src="/paper-card.png" alt="Descriptive pic of the card invitation">
+          <img src="https://hyewonim.com/static/paper-card.png" alt="Descriptive pic of the card invitation">
           <p class="caption">© Hyewon Im</p>
         </div>
         <p>I first designed the paper invitation card using Canva. To keep it elegant yet minimal, I utilized free open-source illustrations and carefully selected fonts that matched the wedding theme. The design process involved experimenting with different layouts, colors, and typography to achieve a warm and inviting feel.</p>
         
         <h2 id="website-mockup-design" class="poppins-semibold">Step 2. Website Mockup Design</h2>
         <div class="img-container text-img">
-          <img src="/mockup.png" alt="Descriptive pic of mockup design">
+          <img src="https://hyewonim.com/static/mockup.png" alt="Descriptive pic of mockup design">
           <p class="caption">© Hyewon Im</p>
         </div>
         <p>Before creating the mockup design, I discussed the necessary features with Ella and finalized the sitemap. Since the website didn’t require many built-in features or multiple pages, I decided to go with a single-page scrollable layout containing the following sections:</p>

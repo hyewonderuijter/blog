@@ -1,16 +1,16 @@
 <!-- BlogPost.svelte -->
 <script lang="ts">
-    export let title = '블로그 제목';
+    export let title = 'Title';
     export let date = '2024-03-05';
-    export let author = '작성자';
+    export let author = 'Author';
     export let featuredImage = '/path/to/default-image.jpg';
     export let content = '';
-    export let tags: string[] = []; // 문자열 배열로 타입 지정
+    export let tags: string[] = [];
   </script>
   
   <div class="blog-post-container">
     <article class="blog-post">
-      <!-- 헤더 섹션 -->
+      <!-- Header -->
       <header class="post-header">
         <h1>{title}</h1>
         <div class="post-meta">
@@ -19,17 +19,16 @@
         </div>
       </header>
   
-      <!-- 대표 이미지 -->
+      <!-- Image -->
       <figure class="featured-image">
         <img src={featuredImage} alt={title} />
       </figure>
   
-      <!-- 본문 내용 -->
+      <!-- Content -->
       <div class="post-content">
         {@html content}
       </div>
   
-      <!-- 코드 블록 예시 -->
             <pre><code>
       // 예시 코드 블록
       function exampleCode() {
@@ -37,7 +36,6 @@
       }
             </code></pre>
   
-      <!-- 태그 섹션 -->
       {#if tags.length > 0}
         <div class="tags">
           {#each tags as tag}

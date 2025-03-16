@@ -30,7 +30,7 @@
       <div class="border-left">
         <h1 class="main-title poppins-bold">Why I Started Using Svelte <br/>(And You Might Too)</h1>
         <div class="img-container main-img">
-          <img src="/svelte-blog.png" alt="Main of Post1" />
+          <img src="https://hyewonim.com/static/svelte-blog.png" alt="Main of Post1" />
         </div>
 
         <div class="text-container">

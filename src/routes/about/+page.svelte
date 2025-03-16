@@ -15,7 +15,7 @@
         <h1 class="title poppins-bold">Wanna know about me?</h1>
             <div data-aos="fade-right" data-aos-duration="1300">
                 <div class="first-story story-container">
-                    <img src="nurse.png" alt="nurse with a patient" class="nurse descriptional-img">
+                    <img src="https://hyewonim.com/static/nurse.png" alt="nurse with a patient" class="nurse descriptional-img">
                     <div class="textarea">
                         <h2>My Decision to Change My Path</h2>
                         <p class="first-para">My journey began in healthcare, where I completed a Bachelor of Science in Healthcare & Nursing Sciences in South Korea.</p>
@@ -25,7 +25,7 @@
             </div>
             <div data-aos="fade-left" data-aos-duration="1300">
                 <div class="second-story story-container">
-                    <img src="developer.png" alt="nurse with a patient" class="developer descriptional-img">
+                    <img src="https://hyewonim.com/static/developer.png" alt="nurse with a patient" class="developer descriptional-img">
                     <div class="textarea">
                         <h2>Finding My Path in Development</h2>
                         <p class="first-para">Moving to the Netherlands for my relationship allowed me to pursue my dream in development, fueling my passion for creating innovative and visually compelling digital experiences.</p>

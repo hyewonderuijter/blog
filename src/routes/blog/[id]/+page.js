@@ -6,7 +6,7 @@ export function load({ params }) {
         title: 'Why I Started Using Svelte (And You Might Too)',
         author: 'Hyewon Im',
         date: '2025-03-05',
-        featuredImage: '/svelte-blog.png',
+        featuredImage: 'https://hyewonim.com/static/svelte-blog.png',
         tags: ['Svelte', 'Web Development']
       },
       {
@@ -14,7 +14,7 @@ export function load({ params }) {
         title: '두 번째 포스트',
         author: '김철수',
         date: '2025-03-07',
-        featuredImage: '/images/post2-featured.jpg',
+        featuredImage: 'https://hyewonim.com/static/wedding-blog.png',
         content: `
           <p>두 번째 포스트는 완전히 다른 구조를 가질 수 있습니다.</p>
           <img src="/images/custom-image2.jpg" alt="Custom Image 2" />

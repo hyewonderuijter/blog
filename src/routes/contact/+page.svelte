@@ -14,7 +14,7 @@
     <h1 class="title poppins-bold">Let's get in touch!</h1>
     <div class="main container poppins-regular">
         <div data-aos="fade-right" data-aos-duration="1300">
-            <img src="contact.png" alt="profile of Hyewon" class="contact-img">
+            <img src="https://hyewonim.com/static/contact.png" alt="profile of Hyewon" class="contact-img">
         </div>
         <div data-aos="fade-left" data-aos-duration="1300">
             <div class="textarea">

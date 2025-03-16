@@ -11,7 +11,7 @@ const initialPosts = [
     date: '2025-03-05',
     author: 'Hyewon Im',
     tags: ['Svelte', 'Web Development'],
-    featuredImage: '/svelte-blog.png',
+    featuredImage: 'https://hyewonim.com/static/svelte-blog.png',
     content: 'This is the content of the first post.'
   },
   {
@@ -21,7 +21,7 @@ const initialPosts = [
     date: '2024-03-06', 
     author: 'Hyewon Im',
     tags: ['UXUI', 'Web Development'],
-    featuredImage: '/wedding-blog.png',
+    featuredImage: 'https://hyewonim.com/static/wedding-blog.png',
     content: 'This is the content of the second post.'
   }
 ];

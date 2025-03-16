@@ -13,7 +13,7 @@
 <main>
     <div class="banner container poppins-regular">
             <div data-aos="fade-right" data-aos-duration="1300">
-                <img src="memoji.png" alt="profile of Hyewon" class="main-profile-img">
+                <img src="https://hyewonim.com/static/memoji.png" alt="profile of Hyewon" class="main-profile-img">
             </div>
             <div data-aos="fade-left" data-aos-duration="1300">
                 <div class="textarea">
@@ -26,7 +26,7 @@
                     <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
                     <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
                     <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>
-                    <img width="48" height="48" src="svelte.png" alt="svetle"/>
+                    <img width="48" height="48" src="https://hyewonim.com/static/svelte.png" alt="svetle"/>
                 </div>
             </div>
     </div>
